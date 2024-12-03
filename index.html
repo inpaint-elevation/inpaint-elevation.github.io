@@ -375,10 +375,9 @@
       <h3 class="title is-4">Uncertainty Quantification</h3>
       <div class="content has-text-justified">
         <p>
-          We tested our algorithm on a total of 13 real scenes taken from previously published datasets and the synthetic Blender dataset. 
-          In particular, we tested our approach on the full set of scenes presented in Mip-Nerf360 [Barron 2022], which is the current state of the art in NeRF rendering quality,
-          two scenes from the Tanks and Temples dataset [Knapitsch 2017] and two scenes provided by Deep Blending [Hedman 2018]. 
-          For the full evaluation please check the paper and the supplemental.
+          The Style Manipulation Module (SMM) in the original mask-aware Transformer allowed us to quantify uncertainty in predictions. This module endows the framework with pluralistic generation by changing the weights normalization
+          of convulational layers in the reconstruction procedure with additional noise input. This was done to encourage diversity of generation. We utilized this module to generate an ensemble of outputs for the same input image. The
+          disagreement between the different outputs generated helps us quantify the statistics associated with the quality of in-painting: RMSE and variance.
         </p>
       </div>
       <div class="columns is-centered">
