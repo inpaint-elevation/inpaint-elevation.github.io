@@ -191,7 +191,7 @@
       <!-- Ray tracing for masks -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
+          <h2 class="title is-3">Custom Masks</h2>
           <p>
             As opposed to the original work that utilized randomly generated masks, we used ray-tracing technique 
             to generate two types of correlated masks - 360-deg masks and forward-facing masks, as shown below. 
@@ -203,14 +203,15 @@
 
       <!-- Two types of Gaussian data for maps -->
       <div class="column">
-        <h2 class="title is-3">Matting</h2>
+        <h2 class="title is-3">Data</h2>
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
+                Two types of dataset for training, validation, and test were generated for this project. The first dataset 
+                featured simpler data with Gaussian blobs, while the second comprised more complex clusters of Gaussian 
+                distributions designed to simulate elevation data.
             </p>
-            <img src="./static/images/ours_2b.png" alt="Steve Image" style="width: 100%; height: auto;">
+            <img src="./static/images/data.png" alt="Steve Image" style="width: 100%; height: auto;">
           </div>
 
         </div>
