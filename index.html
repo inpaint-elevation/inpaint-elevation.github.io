@@ -164,6 +164,20 @@
             unsafe or conservative at best. Hence, here we utilize a mask-aware transformer to fill in the missing data to obtain a more complete
             map leading to better planning and safer outcomes.
           </p>
+          <p>
+            In this project, we use a transformer-based model designed specifically for large-hole image inpainting. It seamlessly integrates 
+            the strengths of transformers and convolutions, enabling efficient processing of high-resolution images. 
+            Each component of this framework is crafted to ensure both high fidelity and diversity in the reconstructed images. 
+            At its core, it is a custom inpainting-oriented transformer block, featuring an attention mechanism that dynamically 
+            aggregates non-local information exclusively from valid tokens, as indicated by an adaptive mask.
+          </p>
+          <p>
+            Uncertainty prediction in inpainted images plays a critical role in enhancing the safety and reliability of decision-making processes, 
+            particularly in high-stakes applications like autonomous driving. When predictions are made in regions 
+            with missing or occluded data, understanding the confidence level of the inpainted content allows systems to assess the potential risks 
+            of relying on such information. We added this capability to the original work used here. The style manipulation module (SMM) enabled us
+            to generate an ensemble of inferences for the same input image. The disagreement between the inferred images allows us to estimate the uncertainty.
+          </p>
         </div>
       </div>
     </div>
