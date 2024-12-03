@@ -193,13 +193,10 @@
         <div class="content">
           <h2 class="title is-3">Visual Effects</h2>
           <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
+            As opposed to the original work that utilized randomly generated masks, we used ray-tracing technique 
+            to generate two types of correlated masks - 360-deg masks and forward-facing masks, as shown below. 
           </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
+          <img src="./static/images/ray_tracing.png" alt="Steve Image" style="width: 100%; height: auto;">
         </div>
       </div>
       <!--/ Ray tracing for masks -->
@@ -213,10 +210,7 @@
               As a byproduct of our method, we can also solve the matting problem by ignoring
               samples that fall outside of a bounding box during rendering.
             </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
+            <img src="./static/images/ours_2b.png" alt="Steve Image" style="width: 100%; height: auto;">
           </div>
 
         </div>
