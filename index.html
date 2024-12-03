@@ -158,31 +158,11 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Our research is offroad autonomy. In such, having a good understanding of the environment we are operating in is imperative
+            for a successfull mission. When observing an unknown cluttered environment, a robot often encounters large occlusions. In the
+            traditional planning paradigm, the missing data is either assumed occupied or free. This results in a motion plan that is either
+            unsafe or conservative at best. Hence, here we utilize a mask-aware transformer to fill in the missing data to obtain a more complete
+            map leading to better planning and safer outcomes.
           </p>
         </div>
       </div>
@@ -194,7 +174,7 @@
 
     <div class="columns is-centered">
 
-      <!-- Visual Effects. -->
+      <!-- Ray tracing for masks -->
       <div class="column">
         <div class="content">
           <h2 class="title is-3">Visual Effects</h2>
@@ -208,9 +188,9 @@
           </video>
         </div>
       </div>
-      <!--/ Visual Effects. -->
+      <!--/ Ray tracing for masks -->
 
-      <!-- Matting. -->
+      <!-- Two types of Gaussian data for maps -->
       <div class="column">
         <h2 class="title is-3">Matting</h2>
         <div class="columns is-centered">
@@ -228,7 +208,7 @@
         </div>
       </div>
     </div>
-    <!--/ Matting. -->
+    <!--/ Two types of Gaussian data for maps -->
 
     <!-- Animation. -->
     <div class="columns is-centered">
